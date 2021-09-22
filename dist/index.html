@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body class="bg-gray-900">
+    <main
+      class="
+        min-w-full min-h-screen
+        px-4 
+        md:flex md:items-center md:justify-center md:gap-8 md:flex-1
+      "
+    >
+      <div class="profile bg-indigo-900 w-full h-auto rounded-2xl md:w-60">
+        <div
+          class="
+            profile-card
+            px-4
+            py-8
+            rounded-xl
+            flex
+            items-center
+            space-x-4
+            md:flex-col md:items-start md:pl-6 md:pb-20 md:pt-6 md:space-y-8
+          "
+        >
+          <div
+            class="
+              image-wrapper
+              w-16
+              h-16
+              rounded-full
+              border-white border-4
+              md:w-24 md:h-24
+            "
+          >
+            <img
+              class="w-full h-full"
+              src="../images/image-jeremy.png"
+              alt="profile picture"
+            />
+          </div>
+          <div class="name text-white">
+            <h2 class="text-gray-100 opacity-90 md:text-sm">Report for</h2>
+            <h1 class="text-2xl md:w-1/5 md:text-3xl">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="lists text-indigo-300 px-6 py-4">
+          <ul
+            class="
+              list
+              flex
+              items-center
+              justify-around
+              md:flex-col md:items-start md:space-y-4
+            "
+          >
+            <a href="#">
+              <li>Daily</li>
+            </a>
+            <a href="#" class="text-white">
+              <li>Weekly</li>
+            </a>
+            <a href="#">
+              <li>Monthly</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="
+          dashboard
+          md:max-h-screen md:flex md:flex-wrap md:w-3/5 md:gap-8 md:justify-center
+        "
+      >
+        <div class="card-container ">
+          <div class="card">
+            <div class="item-left">
+              <div class="item-type">
+                <h3>Work</h3>
+              </div>
+              <div class="hours">
+                <h1>32hrs</h1>
+              </div>
+            </div>
+            <div class="item-right">
+              <!-- <div class="icon">
+                <img src="" alt="" />
+              </div> -->
+              <div class="hours-stats">
+                <h2>Last Week - 36hrs</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="item-left">
+              <div class="item-type">
+                <h3>Play</h3>
+              </div>
+              <div class="hours">
+                <h1>10hrs</h1>
+              </div>
+            </div>
+            <div class="item-right">
+              <!-- <div class="icon">
+                <img src="" alt="" />
+              </div> -->
+              <div class="hours-stats">
+                <h2>Last Week - 8hrs</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="item-left">
+              <div class="item-type">
+                <h3>Study</h3>
+              </div>
+              <div class="hours">
+                <h1>4hrs</h1>
+              </div>
+            </div>
+            <div class="item-right">
+              <!-- <div class="icon">
+                <img src="" alt="" />
+              </div> -->
+              <div class="hours-stats">
+                <h2>Last Week - 7hrs</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="item-left">
+              <div class="item-type">
+                <h3>Exercise</h3>
+              </div>
+              <div class="hours">
+                <h1>4hrs</h1>
+              </div>
+            </div>
+            <div class="item-right">
+              <!-- <div class="icon">
+                <img src="" alt="" />
+              </div> -->
+              <div class="hours-stats">
+                <h2>Last Week - 5hrs</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="item-left">
+              <div class="item-type">
+                <h3>Social</h3>
+              </div>
+              <div class="hours">
+                <h1>5hrs</h1>
+              </div>
+            </div>
+            <div class="item-right">
+              <!-- <div class="icon">
+                <img src="" alt="" />
+              </div> -->
+              <div class="hours-stats">
+                <h2>Last Week - 10hrs</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="item-left">
+              <div class="item-type">
+                <h3>Self Care</h3>
+              </div>
+              <div class="hours">
+                <h1>2hrs</h1>
+              </div>
+            </div>
+            <div class="item-right">
+              <!-- <div class="icon">
+                <img src="" alt="" />
+              </div> -->
+              <div class="hours-stats">
+                <h2>Last Week - 2hrs</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* variables */
+
+:root {
+  --soft-blue: hsl(195, 74%, 62%);
+  --dark-blue: hsl(226, 43%, 10%);
+
+  --ff-primary: "Rubik", sans-serif;
+
+  /* Background */
+  /* Body */
+  --very-dark-blue: hsl(235, 46%, 20%);
+
+
+  /* Card */
+
+  --soft-voilet: rgb(87,70,234);
+
+  --soft-orange: rgba(241, 199, 91, 0.801);
+  --light-violet: rgba(117, 54, 211, 0.815);
+  --light-blue: hsla(246, 80%, 60%, 0.788);
+  --light-green: hsla(145, 58%, 55%, 0.815);
+  --light-orange: hsla(15, 100%, 70%, 0.747);
+  --light-red: hsla(348, 100%, 68%, 0.829);
+}
+body {
+  font-family: var(--ff-primary);
+}
+.profile-card{
+  background: var(--soft-voilet);
+}
+.container {
+  background-color: var(--very-dark-blue);
+}
+
+.card-container {
+  @apply bg-red-400
+  rounded-2xl
+  overflow-hidden
+  pt-10
+  my-4
+  md:w-60;
+}
+.card {
+  @apply bg-indigo-900
+  rounded-t-2xl
+  p-6
+  flex
+  justify-between
+  items-end
+  md:flex-col
+  md:items-start md:space-y-4;
+}
+
+.card .item-left {
+  @apply text-white font-light;
+}
+.card .item-type {
+  @apply text-xl font-normal;
+}
+.card .hours {
+  @apply text-4xl;
+}
+.card .item-right {
+  @apply text-gray-100 opacity-90;
+}
+
+.card-container:nth-child(1) {
+  background-image: linear-gradient(
+      90deg,
+      var(--light-orange),
+      var(--light-orange)
+    ),
+    url("../images/icon-work.svg");
+    background-position:center center ;
+    background-size: contain;
+}
+.card-container:nth-child(2) {
+  background-image: linear-gradient(90deg, var(--light-blue), var(--light-blue)),
+    url("../images/icon-play.svg");
+    background-position:center center ;
+    background-size: contain;
+}
+.card-container:nth-child(3) {
+  background-image: linear-gradient(90deg, var(--light-red), var(--light-red)),
+    url("../images/icon-study.svg");
+    background-position:center center ;
+    background-size: contain;
+}
+.card-container:nth-child(4) {
+  background-image: linear-gradient(
+      90deg,
+      var(--light-green),
+      var(--light-green)
+    ),
+    url("../images/icon-exercise.svg");
+    background-position:center center ;
+    background-size: contain;
+}
+.card-container:nth-child(5) {
+  background-image: linear-gradient(
+      90deg,
+      var(--light-violet),
+      var(--light-violet)
+    ),
+    url("../images/icon-social.svg");
+    background-position:center center ;
+    background-size: contain;
+}
+.card-container:nth-child(6) {
+  background-image: linear-gradient(
+      90deg,
+      var(--soft-orange),
+      var(--soft-orange)
+    ),
+    url("../images/icon-self-care.svg");
+    background-position:center center ;
+    background-size: contain;
+}
